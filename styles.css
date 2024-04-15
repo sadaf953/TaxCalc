@@ -1,0 +1,171 @@
+
+.container-box {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 50px; 
+    margin-top: 200px; 
+    position: relative; 
+  }
+
+
+  .modal-body p {
+      margin-bottom: 0.5px !important;
+  }
+
+  
+  .modal-dialog {
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    max-width: 750px !important;; 
+    height:500px  !important;
+    
+  }
+
+  .modal-body {
+    border: 2px solid #ccc;
+}
+
+
+  .modal-content {
+    height: 400px; 
+  }
+
+
+  .modal-dialog.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-backdrop {
+    background-color: rgba(255, 255, 255,0) !important; /* fully transparent */
+  }
+  
+  
+  .btn-primary {
+    background-color: #6459f3 !important;
+  }
+
+
+  .btn-secondary {
+    background-color:  #6459f3 !important;
+  }
+
+
+  .error-icon {
+    color: grey;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 0.5em);
+    cursor: pointer;
+  }
+
+
+  .error-tooltip {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    width: 220px; 
+    left: calc(80% + 10px);
+  }
+
+  .error-tooltip.invalid {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    border-color: #f5c6cb; /* Red */
+  }
+
+
+  .error-tooltip {
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1;
+  width: 220px; 
+  left: calc(80% + 10px);
+  background-color: #fff; /* Tooltip background color */
+  color: #000; /* Tooltip text color */
+  border: 1px solid #ced4da; /* Tooltip border color */
+  }
+
+ 
+  .error-tooltip::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #ced4da transparent transparent; /* Adjust arrow color */
+  }
+
+  .error-tooltip .fas.fa-info-circle {
+  color: #6c757d !important; /* Dark grey */
+  }
+  
+  
+  .question-mark {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .popup-text {
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: #fff; /* Popup background color */
+  color: #000; /* Popup text color */
+  border: 1px solid #ced4da; /* Popup border color */
+  width: 220px; /* Adjust width as needed */
+  left: calc(18% + 10px); /* Positioning relative to the question-mark */
+  top: -35px; /* Align above the question-mark */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  }
+
+  .popup-text::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ced4da transparent transparent transparent; /* Adjust arrow color */
+  }
+
+  .question-mark:hover + .popup-text {
+  visibility: visible;
+  opacity: 1;
+  }
+
+  .question-mark:hover + .popup-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup-text.gross-income {
+  left: calc(18% + 10px);
+  top: -35px;
+  }
+
+  .popup-text.extra-income {
+  left: calc(10%);
+  top:20px;
+  }
+
+  .popup-text.age-group {
+  left: calc(8% + 0px);
+  top: 160px;
+  }
+
+  .popup-text.deductions {
+  left: calc(25% + 18px);
+  top: 220px;
+  }
+

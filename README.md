@@ -1,0 +1,5 @@
+![Main Page](images/main.png)
+![Result Page](images/result.png)
+![Question Mark Icon](images/question.png)
+![Age Group Dropdown](images/age.png)
+![Number Input Field](images/number.png)
